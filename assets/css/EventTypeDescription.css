@@ -1,0 +1,121 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+} */
+.popcontainer {
+    position: absolute;
+    top: 50%; /* Adjust vertical position as needed */
+    left: 50%; /* Adjust horizontal position as needed */
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1010; /* Ensure this is higher than .popoverlay */
+}
+.popform-group {
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.popform-group:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+}
+.popform-group input{
+    width: 100%;
+    box-sizing: border-box;
+}
+label {
+    font-weight: bold;
+}
+input[type="text"],
+select {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="password"]{
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+
+
+
+}
+.popbutton {
+    background-color: #3a84a8;
+    color: #f9f4f4;
+    border: none;
+    padding: 10px 35px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 160px;
+    margin-top: -10px;
+}
+.popbutton:hover {
+    background-color: #2f8e20;
+}
+.popbut{
+    background-color: #dd3030;
+    color: #f9f4f4;
+    border: none;
+    padding: 10px 35px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 95px;
+    margin-top: -48px;
+
+}
+.popbut:hover {
+    background-color: #ed4444;
+}
+.popoverlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1000; /* Adjust as necessary */
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.popoverlay:target{
+    visibility: visible;
+    opacity: 1;
+}
+.popclose{
+    padding: 5px;
+    background-color:white;
+    margin-left: 400px;
+    color: #000000;
+}
+.popclose:hover  {
+ background-color:#ddd;
+}
+input[type="color"],
+select {
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px
+
+}
+/* .butt{
+
+    background-color: #27109b;
+    padding: 10px 20px;
+}
+.butt:hover{
+    cursor: pointer;
+
+    background-color: rgb(6, 28, 171);
+
+} */
+
